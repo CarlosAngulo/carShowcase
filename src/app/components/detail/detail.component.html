@@ -1,1 +1,9 @@
-<h1 *ngFor="let item of car ">{{item.id}}</h1>
+<div *ngFor="let item of car">
+    <h1>{{item.brand}} {{item.name}}</h1>
+    <h2>{{item.model}}</h2>
+    <img [src]="item.thumb" alt="{{item.brand}} {{item.name}}">
+    <p>{{item.description}}</p>
+    <p>{{item.phone}}</p>
+</div>
+
+<a class="btn btn-primary" routerLink="/home">Volver</a>

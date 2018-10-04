@@ -11,19 +11,19 @@ import { CarsService } from './services/cars.service'
 
 // Components
 import { AppComponent } from './app.component';
-import { PaginationComponent } from './pagination/pagination.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginationComponent,
     NavbarComponent,
     CarsComponent,
-    DetailComponent
+    DetailComponent,
+    SearchComponent
   ],
   imports: [
     HttpClientModule,

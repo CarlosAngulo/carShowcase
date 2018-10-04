@@ -16,18 +16,21 @@ export class DetailComponent implements OnInit {
   constructor( private _activatedRoute:ActivatedRoute, private _cars:CarsService,) {
     this._activatedRoute.params.subscribe( params => {
       this.carId = params['id'].toString();
-      this._cars.getCars().subscribe(data => {
+      this._cars.getCarsDB().subscribe(data => {
         this.car = data
         .filter(item => item.id == this.carId)
         .map(item =>
           {
             return new Car(
               item.id,
+              item.brand,
               item.name,
               item.model,
+              item.year,
               item.price,
               item.thumb,
-              item.description
+              item.description,
+              item.phone
             );
           });
         });
