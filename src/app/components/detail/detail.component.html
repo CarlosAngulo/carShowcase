@@ -3,7 +3,7 @@
         <div class="row">
             <div *ngFor="let item of car">
                 <div class="col-md-8 col-xs-12">
-                    <img [src]="item.thumb" alt="{{item.brand}} {{item.name}}">
+                    <img [src]="item.gallery[0]" alt="{{item.brand}} {{item.name}}">
                 </div>
                 <div class="col-md-4 col-xs-12 banner-text">
                     <h1>{{item.brand}} {{item.model}}<br>{{item.name}}</h1>
