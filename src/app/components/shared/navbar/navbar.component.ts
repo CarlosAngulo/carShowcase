@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { CarsService } from '../../../services/cars.service';
 
@@ -9,6 +9,8 @@ import { CarsService } from '../../../services/cars.service';
 })
 export class NavbarComponent implements OnInit {
 
+  @Input() stick:boolean; 
+
   constructor( private _carService:CarsService, private _router:Router) { }
 
   ngOnInit() {
@@ -17,4 +19,5 @@ export class NavbarComponent implements OnInit {
   searchByBrand(term:string) {
     this._router.navigate(['/search', term]);
   }
+
 }

@@ -1,21 +1,11 @@
-<h1>Search Results</h1>
-<hr>
+<div class="container">
 
-<div class="card-columns">
-  <div class="card" *ngFor="let car of cars">
-    <img  class="card-img-top"
-          [src]="car.thumb"
-          alt="{{ car.name }} {{car.model}}"
-    >
-    <div class="card-body">
-      <h4 class="card-title">{{ car.brand }} {{ car.name }} <small>{{car.model}}</small></h4>
-      <p class="card-text">{{ car.description }}</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <p class="card-title price">{{ car.price | currency:USD:symbol }}</p>
-      <button class="btn btn-outline-primary btn-block"
-              (click)="showDetail(car.id)">
-              Ver
-      </button>
+  <h1>{{ carsLength }} Results for {{ term | uppercase}} </h1>
+  
+  <div class="card-columns">
+    <div class="card" *ngFor="let car of cars">
+        <app-card [info]="car"></app-card>
     </div>
   </div>
+
 </div>

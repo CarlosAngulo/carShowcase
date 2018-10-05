@@ -1,0 +1,86 @@
+@import "~variables.scss";
+
+:host {
+    background-color: $primary-color;
+    color: white;
+    display: block;
+}
+
+.header-top-area {
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding: 10px 0;
+    font-size: 13px;
+    i.fas {
+        margin: 0 8px;
+    }
+}
+
+img {
+    display: block;
+    width: 90%;
+}
+
+.header-top-menu {
+    list-style: none;
+    margin: 0;
+    li {
+        display: inline-block;
+        padding: 0 10px;
+        &:last-child {
+            border-left: 1px solid rgba(255,255,255,0.3);
+        }
+    }
+}
+
+.header-middle-area {
+    padding: 40px 0;
+}
+
+.navbar {
+    border-radius: 20px 20px 0 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    &.navbar-expand-lg .navbar-nav .nav-link {
+        padding: .6rem 1.3rem;
+    }
+    .dropdown-menu {
+        border-radius: 0;
+        margin-top: 0.4rem;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .dropdown-divider {
+        margin: 0;
+    }
+    .navbar-toggler {
+        border: medium none;
+    }
+    .logo {
+        width: 160px;
+        margin-left: 8%;
+    }
+    &.fixed-top {
+        border-radius: 0;
+    }
+}
+
+.form-inline {
+    input.form-control {
+        border: medium none;
+        border-radius: 25px 0 0 25px;
+        margin-right: 0 !important;
+        font-size: 14px;
+        padding: 0 80px 0 30px;
+        height: 50px;
+        width: calc(100% - 80px);
+        outline: 0;
+    }
+    button {
+        height: 50px;
+        width: 67px;
+        border-radius: 0 25px 25px 0;
+        background-color: #343a40;
+        color: white;
+        font-size: 18px;
+    }
+}

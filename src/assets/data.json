@@ -4,10 +4,10 @@
 		"name": "2.0 R-Line",
 		"model": "TSI DSG7",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842837,
 		"thumb": "http://static.carroya.com/vehiculos/1815841/1815841_18_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
 		"phone": "+573014666057"
 	},
 	{
@@ -15,49 +15,219 @@
 		"name": "Yeti",
 		"model": "Outdoor Ambition 1.6 MPI 2017",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842838,
 		"thumb": "http://static.carroya.com/vehiculos/1813235/1813235_1_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
 	},
 	{
 		"brand": "BMW",
 		"name": "M3",
 		"model": "Coupé E92",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842839,
 		"thumb": "http://static.carroya.com/vehiculos/1834953/1834953_2_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
 	},
 	{
 		"brand": "Tiguan",
 		"name": "2.0 R-Line",
 		"model": "TSI DSG7",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842840,
 		"thumb": "http://static.carroya.com/vehiculos/1815841/1815841_18_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
 	},
 	{
 		"brand": "Skoda",
 		"name": "Yeti",
 		"model": "Outdoor Ambition 1.6 MPI 2017",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842841,
 		"thumb": "http://static.carroya.com/vehiculos/1813235/1813235_1_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
 	},
 	{
 		"brand": "BMW",
 		"name": "M3",
 		"model": "Coupé E92",
 		"year": 2018,
-		"price": 1500,
+		"price": 1500000,
 		"id": 1842842,
 		"thumb": "http://static.carroya.com/vehiculos/1834953/1834953_2_m.jpg",
-		"description": "This card has supporting text below as a natural lead-in to additional content."
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Jaguar",
+		"name": "F - Pace 3.0",
+		"model": "R-Sport",
+		"year": 2018,
+		"price": 282000000,
+		"id": 1842843,
+		"thumb": "http://static.carroya.com/vehiculos/1842837/1842837_5_v.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Audi",
+		"name": "Q7 3.0",
+		"model": "TDI TIP Quattro",
+		"year": 2018,
+		"price": 199000000,
+		"id": 1842844,
+		"thumb": "http://static.carroya.com/vehiculos/1841565/1841565_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Audi",
+		"name": "A4 2.0",
+		"model": "TFSI S-Tronic Ambition",
+		"year": 2018,
+		"price": 120000000,
+		"id": 1842845,
+		"thumb": "http://static.carroya.com/vehiculos/1843600/1843600_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Jeep",
+		"name": "Grand Cherokee",
+		"model": "SRT8",
+		"year": 2017,
+		"price": 285000000,
+		"id": 1842846, 
+		"thumb": "http://static.carroya.com/vehiculos/1783276/1783276_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "BMW",
+		"name": "M2",
+		"model": "COUPÉ",
+		"year": 2018,
+		"price": 137000000,
+		"id": 1842846,
+		"thumb": "http://static.carroya.com/vehiculos/1831038/1831038_2_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Mazda",
+		"name": "3 Skyactiv",
+		"model": "Gran Touring",
+		"year": 2017,
+		"price":69000000,
+		"id": 1842847,
+		"thumb": "http://static.carroya.com/vehiculos/1826150/1826150_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Audi",
+		"name": "A1 ",
+		"model": "1.4T Sportrack Ambition",
+		"year": 2018,
+		"price": 76000000,
+		"id": 1842848,
+		"thumb": "http://static.carroya.com/vehiculos/1831082/1831082_2_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Lan Rover",
+		"name": "Ranger Rover",
+		"model": "TDV8 4.4 HSE",
+		"year": 2008,
+		"price":78.000000,
+		"id": 1842849,
+		"thumb": "http://static.carroya.com/vehiculos/1844171/1844171_4_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Mazda",
+		"name": "MX5",
+		"model": "Authomatic",
+		"year": 2018,
+		"price":95000000,
+		"id": 1842850,
+		"thumb": "http://static.carroya.com/vehiculos/1794971/1794971_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Mercedes Benz",
+		"name": "Clase",
+		"model": "GLK 220 CDI",
+		"year": 2017,
+		"price": 90000000,
+		"id": 1842851,
+		"thumb": "http://static.carroya.com/vehiculos/1843105/1843105_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Mitsubishi",
+		"name": "ASX 2.0",
+		"model": "4X2",
+		"year": 2018,
+		"price":87000000,
+		"id": 1842852,
+		"thumb": "http://static.carroya.com/vehiculos/1811142/1811142_2_v.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Mercedes Benz",
+		"name": "Clase",
+		"model": "GLC 250 4Matic ",
+		"year": 2018,
+		"price": 150000000,
+		"id": 1842853,
+		"thumb": "http://static.carroya.com/vehiculos/1836462/1836462_4_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Hyundai",
+		"name": "Tucson Limited",
+		"model": "4x2 authomatic",
+		"year": 2018,
+		"price": 100000000,
+		"id": 1842854,
+		"thumb": "http://static.carroya.com/vehiculos/1839680/1839680_5_v.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Audi",
+		"name": "A5 1.8 TSFI",
+		"model": "Cabrio Red Hood",
+		"year": 2017,
+		"price": 130000000,
+		"id": 1842855,
+		"thumb": "http://static.carroya.com/vehiculos/1839881/1839881_1_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
+	},
+	{
+		"brand": "Volkwangen",
+		"name": "Jetta TSI 1.4",
+		"model": "Highline",
+		"year": 2019,
+		"price": 80000000,
+		"id": 1842856,
+		"thumb": "http://static.carroya.com/vehiculos/1821151/1821151_15_m.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit viverra nisl. Integer volutpat pulvinar egestas. Praesent bibendum lectus eu lorem ultricies, in elementum nisi varius. In aliquam quis lacus vel sollicitudin. Aliquam condimentum, dolor non ornare laoreet, odio libero scelerisque odio, eget hendrerit lacus diam at ipsum.",
+		"phone": "+57 301 00000"
 	}
 ]

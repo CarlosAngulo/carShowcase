@@ -1,21 +1,25 @@
-<h1>Car <small>Showcase</small></h1>
-<hr>
+<div class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-xs-12">
+        <img src="assets/img/porsche-model.png" alt="">
+      </div>
+      <div class="col-md-4 col-xs-12 banner-text">
+        <h5>Exclusive Offer -20% Off This Week</h5>
+        <h1>Find your car<br>Sale 70% Off</h1>
+        <h4>Starting at <span>$1.560,99</span></h4>
+        <div class="slider-button">
+          <a href="/" class="button">shopping Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<div class="card-columns">
-  <div class="card" *ngFor="let car of cars">
-    <img  class="card-img-top"
-          [src]="car.thumb"
-          alt="{{ car.name }} {{car.model}}"
-    >
-    <div class="card-body">
-      <h4 class="card-title">{{ car.brand }} {{ car.name }} <small>{{car.model}}</small></h4>
-      <p class="card-text">{{ car.description }}</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      <p class="card-title price">{{ car.price | currency:USD:symbol }}</p>
-      <button class="btn btn-outline-primary btn-block"
-              (click)="showDetail(car.id)">
-              Ver
-      </button>
+<div class="container">
+  <div class="card-columns">
+    <div class="card" *ngFor="let car of cars">
+        <app-card [info]="car"></app-card>
     </div>
   </div>
 </div>

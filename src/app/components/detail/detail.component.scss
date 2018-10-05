@@ -1,0 +1,32 @@
+@import "~variables.scss";
+
+:host {
+    padding-bottom: 50px;
+    display: block;
+}
+
+.row >div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  i {
+      margin-right: 5px;
+  }  
+}
+
+h2.description {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0 30px; 
+    color: $primary-color;
+}

@@ -1,50 +1,92 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="https://cdn1.iconfinder.com/data/icons/icons-for-a-site-1/64/advantage_deliver-128.png" width="30" height="30" alt="">
-    </a>
-  </nav>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+<div class="header-top-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="header-top-menu">
+            Currency: USD
+            <i class="fas fa-angle-down"></i>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input 
-        class="form-control mr-sm-2" 
-        type="search" 
-        placeholder="Search" 
-        aria-label="Search" 
-        (keyup.enter)="searchByBrand(searchText.value)" 
-        #searchText>
-      <button 
-        class="btn btn-outline-success my-2 my-sm-0" 
-        type="button"
-        (click)="searchByBrand(searchText.value)">
-          Search
-      </button>
-    </form>
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-12 text-right">
+        <ul class="header-top-menu">
+          <li class="support">
+              <i class="fas fa-clock"></i>
+              Ordered before 17:30, shipped today  - Support: (012) 800 456 789
+            </li>
+          <li class="account">
+            <i class="fas fa-cog"></i>
+            My Account
+            <i class="fas fa-angle-down"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-</nav>
+</div>
+
+<div class="header-middle-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="logo">
+          <a href="/"><img src="/assets/img/brand.png" alt="Javenist  E-Commerce Shpify  Theme"></a>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="form-inline my-2 my-lg-0">
+          <input 
+            class="form-control mr-sm-2" 
+            type="search" 
+            placeholder="Search by brand" 
+            aria-label="Search by brand" 
+            (keyup.enter)="searchByBrand(searchText.value)"
+            #searchText>
+          <button 
+            class="btn my-2 my-sm-0" 
+            type="button"
+            (click)="searchByBrand(searchText.value)">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-bottom-area">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" [ngClass]="{'fixed-top':stick}">
+      <div class="logo" *ngIf="stick">
+        <a href="/"><img src="/assets/img/brand.png" alt="Javenist  E-Commerce Shpify  Theme"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Founding
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Calculator</a>
+              <a class="dropdown-item" href="#">Leasing</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ensurance</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>

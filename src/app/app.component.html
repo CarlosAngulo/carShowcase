@@ -1,5 +1,8 @@
-<app-navbar></app-navbar>
 
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
+<app-navbar 
+    (window:scroll)="doSomethingOnScroll($event)" 
+    [stick]="stick"
+    #navBar>
+</app-navbar>
+
+<router-outlet></router-outlet>

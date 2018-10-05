@@ -1,9 +1,41 @@
-<div *ngFor="let item of car">
-    <h1>{{item.brand}} {{item.name}}</h1>
-    <h2>{{item.model}}</h2>
-    <img [src]="item.thumb" alt="{{item.brand}} {{item.name}}">
-    <p>{{item.description}}</p>
-    <p>{{item.phone}}</p>
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let item of car">
+                <div class="col-md-8 col-xs-12">
+                    <img [src]="item.thumb" alt="{{item.brand}} {{item.name}}">
+                </div>
+                <div class="col-md-4 col-xs-12 banner-text">
+                    <h1>{{item.brand}} {{item.model}}<br>{{item.name}}</h1>
+                    <h2>{{item.year}}</h2>
+                    <h4><span>{{item.price | currency:USD:symbol }}</span></h4>
+                    <h3>
+                        <i class="fas fa-phone-square"></i>
+                        {{item.phone}}
+                    </h3>
+                    <div class="slider-button">
+                        <button class="button">
+                            <i class="fas fa-envelope"></i>
+                            Contact owner
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<a class="btn btn-primary" routerLink="/home">Volver</a>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let item of car">
+            <div class="col-md-5 col-xs-12">
+                <h2 class="description">Description</h2>
+                <p class="description">This <b>{{item.brand}} {{item.name}} {{item.model}}</b> {{item.description}}</p>
+                <a class="btn btn-primary" routerLink="/home">Volver</a>
+            </div>
+            <div class="col-md-7 col-xs-12">
+                <h2 class="description">Technical specifications <b>{{item.brand}} {{item.name}} {{item.model}}</b></h2>
+            </div>
+        </div>
+    </div>
+</div>

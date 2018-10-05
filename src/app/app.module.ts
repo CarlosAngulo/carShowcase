@@ -15,6 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { SearchComponent } from './components/search/search.component';
+import { CardComponent } from './components/shared/card/card.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SearchComponent } from './components/search/search.component';
     NavbarComponent,
     CarsComponent,
     DetailComponent,
-    SearchComponent
+    SearchComponent,
+    CardComponent
   ],
   imports: [
     HttpClientModule,

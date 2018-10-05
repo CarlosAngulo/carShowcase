@@ -1,54 +1,62 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Car } from '../shared/model/car';
 import { Observable} from 'rxjs/Rx';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/first';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class CarsService {
 
   private apiURL = '../assets/data.json';
   private cars: Car[];
-  private filteredCars: Car[];
 
   constructor(private http: HttpClient) {
   }
 
-  getCarsDB(): Observable<Car[]> {
-    return this.http
-      .get<Car[]>(this.apiURL)
+  getAll(): Observable<Car[]> {
+    return this.http.get<Car[]>(this.apiURL).pipe(
+      map(cars => {
+        return this.mapAnswer(cars)
+      })
+    );
   }
 
-  getCarById(idx:number): Observable<Car> {
-    return this.http
-      .get<Car>(this.apiURL)
-      .take(1)
-      .map(x => x)
+  getCarById(idx:number): Observable<Car[]> {
+    return this.http.get<Car[]>(this.apiURL).pipe(
+      map(cars => {
+        return this.mapAnswer(cars, true).filter(item => {
+          return item.id == idx;
+        });
+      })
+    );
   }
-
-  getCars():Car[] {
-    return this.cars;
+  
+  getCarsByBrand(term:string): Observable<Car[]> {
+    return this.http.get<Car[]>(this.apiURL).pipe(
+      map(cars => {
+        return this.mapAnswer(cars)
+        .filter(item => item.brand.toLowerCase() === term.toLowerCase());
+      })
+    );
   }
-
-  setCars(listOfCars:Car[]) {
-    this.cars = listOfCars;
-  }
-
-  getCarsByBrand(term:string) {
-    let carsArr: Car[] = [];
-    term = term.toLocaleLowerCase();
-    if(this.cars){
-      for(let car of this.cars) {
-        let brand = car.brand.toLowerCase();
-        if(brand.includes(term)){
-          carsArr.push(car);
-        }
+  
+  mapAnswer(cars:Car[], complete:boolean = false){
+    return cars.map(car => {
+      let newCar:Car = new Car(
+        car.id,
+        car.brand,
+        car.name,
+        car.model,
+        car.year,
+        car.price,
+        car.thumb,
+        car.description
+      );
+      if(complete) {
+        newCar.gallery = car.gallery;
+        newCar.phone = car.phone;
       }
-    } else {
-
-    }
-    return carsArr;
+      return newCar;
+    })
   }
-
 }

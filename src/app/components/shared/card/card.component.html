@@ -1,0 +1,9 @@
+<img  class="card-img-top"
+  [src]="info.thumb"
+  alt="{{ info.name }} {{info.model}}"
+  (click)="showDetail(info.id)">
+<div class="card-body">
+  <h4 (click)="showDetail(info.id)">{{ info.brand | uppercase }} <br/>{{ info.name }} <small>{{info.model}}</small></h4>
+  <p class="card-text">{{ info.year }}</p>
+  <p class="card-title">{{ info.price | currency:USD:symbol }}</p>
+</div>

@@ -13,6 +13,7 @@ export class SearchComponent implements OnInit {
 
   private term: string;
   private cars:Car[];
+  private carsLength:number;
 
   constructor(  private _carService:CarsService, 
                 private _activatedRoute:ActivatedRoute,
@@ -22,10 +23,12 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
     this._activatedRoute.params.subscribe(params => {
       this.term = params['term'].toString();
-      console.log(this._carService.getCarsByBrand(this.term));
-      this.cars = this._carService.getCarsByBrand(this.term);
+      this._carService.getCarsByBrand(this.term).subscribe(data => {
+        this.cars = data
+        this.carsLength = data.length;
+      });
+
     });
-    
   }
 
   showDetail(index:number) {
