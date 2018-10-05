@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { CarsService} from '../../services/cars.service';
+import { CarsService } from '../../services/cars.service';
+import { CompareService } from '../../services/compare.service';
 import { Car } from '../../shared/model/car';
+import { Observable } from 'rxjs';
 import { first } from 'rxjs/operators';
 
 @Component({
@@ -13,7 +14,9 @@ export class CarsComponent implements OnInit {
 
   public cars: Car[];
 
-  constructor( private _cars:CarsService ) { }
+  constructor( private _cars:CarsService, private _compare:CompareService ) {
+    this._compare.removeAllCars();
+  }
 
   ngOnInit() {
     this._cars.getAll().subscribe(data => {

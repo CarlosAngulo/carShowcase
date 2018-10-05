@@ -8,6 +8,7 @@ import { APP_ROUTING } from './app.routes';
 
 // Services
 import { CarsService } from './services/cars.service'
+import { CompareService } from './services/compare.service'
 
 // Components
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { CarsComponent } from './components/cars/cars.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { SearchComponent } from './components/search/search.component';
 import { CardComponent } from './components/shared/card/card.component';
+import { CompareComponent } from './components/compare/compare.component';
+import { SortByBrandPipe } from './pipes/sort-by-brand.pipe';
 
 
 @NgModule({
@@ -25,7 +28,9 @@ import { CardComponent } from './components/shared/card/card.component';
     CarsComponent,
     DetailComponent,
     SearchComponent,
-    CardComponent
+    CardComponent,
+    CompareComponent,
+    SortByBrandPipe
   ],
   imports: [
     HttpClientModule,
@@ -33,7 +38,8 @@ import { CardComponent } from './components/shared/card/card.component';
     APP_ROUTING
   ],
   providers: [
-    CarsService
+    CarsService,
+    CompareService
   ],
   bootstrap: [AppComponent]
 })

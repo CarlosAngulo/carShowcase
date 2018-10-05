@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { CarsService } from '../../services/cars.service';
+import { CompareService } from '../../services/compare.service';
 import { Car } from '../../shared/model/car';
 
 @Component({
@@ -17,8 +18,10 @@ export class SearchComponent implements OnInit {
 
   constructor(  private _carService:CarsService, 
                 private _activatedRoute:ActivatedRoute,
-                private _router:Router
-  ) { }
+                private _router:Router,
+                private _compare:CompareService){
+    this._compare.removeAllCars();
+  }
 
   ngOnInit() {
     this._activatedRoute.params.subscribe(params => {

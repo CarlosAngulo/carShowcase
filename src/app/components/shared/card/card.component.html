@@ -3,7 +3,30 @@
   alt="{{ info.name }} {{info.model}}"
   (click)="showDetail(info.id)">
 <div class="card-body">
-  <h4 (click)="showDetail(info.id)">{{ info.brand | uppercase }} <br/>{{ info.name }} <small>{{info.model}}</small></h4>
-  <p class="card-text">{{ info.year }}</p>
+  <h2 (click)="searchByBrand(info.brand)">{{ info.brand | uppercase }} </h2>
+  <h4 (click)="showDetail(info.id)">
+    {{ info.name }} 
+    <small>{{info.model}} {{ info.year }}</small>
+  </h4>
   <p class="card-title">{{ info.price | currency:USD:symbol }}</p>
+  <hr>
+  <ul class="options">
+    <li>
+      <button class="btn" (click)="showDetail(info.id)">
+        <i class="fas fa-eye"></i>
+        VIEW
+      </button>
+    </li>
+    <li>
+      <div class="custom-control custom-checkbox">
+        <input  type="checkbox" 
+          class="custom-control-input" 
+          id="{{info.id}}" 
+          (click)="addCarToCompare(info, checkCar)" 
+          [disabled] = "disabled"
+          #checkCar>
+        <label class="custom-control-label" for="{{info.id}}">COMPARE</label>
+      </div>
+    </li>
+  </ul>
 </div>

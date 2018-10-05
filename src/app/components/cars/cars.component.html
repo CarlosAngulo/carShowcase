@@ -18,7 +18,7 @@
 
 <div class="container">
   <div class="card-columns">
-    <div class="card" *ngFor="let car of cars">
+    <div class="card" *ngFor="let car of cars | sortByBrand ">
         <app-card [info]="car"></app-card>
     </div>
   </div>

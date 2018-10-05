@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { CarsService } from '../../../services/cars.service';
+import { CompareService } from '../../../services/compare.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,15 +10,24 @@ import { CarsService } from '../../../services/cars.service';
 })
 export class NavbarComponent implements OnInit {
 
-  @Input() stick:boolean; 
+  @Input() stick:boolean;
+  private disableCompare = true
 
-  constructor( private _carService:CarsService, private _router:Router) { }
+  constructor(  private _carService:CarsService, 
+                private _router:Router,
+                private _compare:CompareService ) { }
 
   ngOnInit() {
+    this._compare.canCompare.subscribe( value => this.disableCompare = value);
   }
 
   searchByBrand(term:string) {
     this._router.navigate(['/search', term]);
+  }
+
+  compare() {
+    console.log('copare')
+    this._router.navigate(['/compare']);
   }
 
 }

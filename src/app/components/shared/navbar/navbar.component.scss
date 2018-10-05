@@ -1,4 +1,5 @@
 @import "~variables.scss";
+@import "../../../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 :host {
     background-color: $primary-color;
@@ -21,13 +22,20 @@ img {
 }
 
 .header-top-menu {
-    list-style: none;
     margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    @include media-breakpoint-only(sm) {
+        text-align: left;
+    }
     li {
         display: inline-block;
         padding: 0 10px;
         &:last-child {
-            border-left: 1px solid rgba(255,255,255,0.3);
+            @include media-breakpoint-only(md) {
+                border-left: 1px solid rgba(255,255,255,0.3);
+            }
         }
     }
 }
@@ -59,8 +67,19 @@ img {
         width: 160px;
         margin-left: 8%;
     }
+    button.compare {
+        background-color: #456a8a;
+        color: white;
+        border-radius: 11px;
+        i {
+            margin-right: 8px;
+        }
+    }
     &.fixed-top {
         border-radius: 0;
+        button.compare {
+            margin-right: 10%;
+        }
     }
 }
 

@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Select the best <small>choice for you</small></h1>
+  <div class="card-group">
+    <div class="card" *ngFor="let car of cars">
+      <img class="card-img-top" src="{{car.thumb}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><b>{{car.brand}} {{car.name}}</b> {{car.model}} {{car.year}} </h5>
+        <p class="card-text">{{car.description}}</p>
+      </div>
+      <div class="card-footer">
+        <h5 class="text-muted">Technical specifications</h5>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card" *ngFor="let car of cars">
+      <div class="card-body">
+        <p class="card-text">{{car.price | currency}}</p>
+        <hr>
+        <p class="card-text">{{car.engine}} CC</p>
+        <hr>
+        <p class="card-text">{{car.km}} KM</p>
+      </div>
+    </div>
+  </div>
+</div>

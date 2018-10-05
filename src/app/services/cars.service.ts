@@ -55,6 +55,9 @@ export class CarsService {
       if(complete) {
         newCar.gallery = car.gallery;
         newCar.phone = car.phone;
+        newCar.engine = car.engine;
+        newCar.km = car.km;
+        newCar.color = car.color;
       }
       return newCar;
     })

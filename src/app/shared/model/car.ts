@@ -9,6 +9,9 @@ export class Car {
         public thumb:string, 
         public description:string,
         public phone?:string,
-        public gallery?:string[]
+        public gallery?:string[],
+        public engine?:number,
+        public km?:number,
+        public color?:string
     ) {}
 }

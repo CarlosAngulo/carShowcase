@@ -86,6 +86,13 @@
             <a class="nav-link" href="#">News</a>
           </li>
         </ul>
+
+        <button class="btn compare" 
+          [disabled] = "disableCompare"
+          (click) = "compare()">
+          <i class="fa fa-clipboard-check"></i>
+          COMPARE
+        </button>
       </div>
     </nav>
   </div>
